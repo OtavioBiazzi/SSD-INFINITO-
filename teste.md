@@ -9,7 +9,7 @@
 
 ## 1. Sobre o Projeto
 
-A ideia do trabalho era criar um site com informações sobre os cursos da Etec Vasco Antônio Venchiarutti. A gente fez tudo do zero usando HTML, CSS e JavaScript. Depois, o site passou por uma atualização pra colocar o cabeçalho e o rodapé padrão do Governo do Estado de São Paulo, que é uma exigência do Centro Paula Souza.
+A ideia do trabalho era criar um site com informações sobre os cursos da Etec Vasco Antônio Venchiarutti. A gente fez tudo do zero usando HTML, CSS e JavaScript. Depois, o site passou por uma atualização pra colocar o cabeçalho e o rodapé padrão do Governo do Estado de São Paulo.
 
 O site tem **6 páginas**:
 
@@ -24,20 +24,20 @@ O site tem **6 páginas**:
 
 ## 2. Parte Visual (HTML e CSS)
 
-A gente tentou deixar o site simples e fácil de usar, sem muita firula.
+A gente tentou deixar o site simples e fácil de usar.
 
 - **Organização dos cursos:** Usamos o CSS Grid (aquele `display: grid`) pra organizar os cartões dos cursos em grade. Assim eles se ajeitam certinho tanto no computador quanto no celular.  
 - **Padrão do governo:** Pra seguir a identidade visual que o Centro Paula Souza pede, a gente colocou o cabeçalho e o rodapé oficiais do portal SP. Basicamente importamos os arquivos de estilo prontos que o próprio governo disponibiliza.
 
 ---
 
-## 3. A parte do JavaScript (e os perrengues)
+## 3. A parte do JavaScript
 
 Sendo bem honestos: a gente sabia muito pouco de JavaScript antes desse projeto. Quando surgiu a ideia de fazer com que, ao clicar num cartão de curso, aparecesse uma caixa com a descrição dele, a gente ficou meio perdido no começo.
 
 Pra conseguir fazer funcionar, assistimos vídeos no YouTube, pesquisamos bastante e também usamos ferramentas de IA pra entender como montar o código.
 
-**Como funciona na prática:**
+**Como funciona:**
 
 Criamos uma função chamada `mostrar(nome, desc)`. Quando o usuário clica num cartão de curso, acontece o seguinte:
 
@@ -47,7 +47,7 @@ Criamos uma função chamada `mostrar(nome, desc)`. Quando o usuário clica num 
 4. Faz a caixa de descrição (que tava escondida) aparecer na tela.  
 5. Rola a página pro topo pra pessoa conseguir ler tudo direitinho.  
 
-O mais legal disso tudo é que o código ficou bem curto — menos de 10 linhas. E como todos os cartões seguem o mesmo esquema, foi só copiar a mesma lógica pras outras páginas. Não precisou reinventar nada: uma vez que funcionou numa página, funcionou em todas.
+O bom disso tudo é que o código ficou bem curto. E como todos os cartões seguem o mesmo esquema, foi só copiar a mesma lógica pras outras páginas. Não precisou reinventar nada: uma vez que funcionou numa página, funcionou em todas.
 
 ---
 
