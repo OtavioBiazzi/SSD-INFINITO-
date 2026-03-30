@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETEC VAV — Cursos Vespertinos</title>
+    <link rel="icon" href="imagens/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <img src="imagens/icon.png" alt="etecvav">
+            <span>ETEC VAV</span>
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="modulares.html">Modulares</a>
+            <a href="integrados.html" class="ativo">Integrados</a>
+        </nav>
+    </div>
+    <h1 class="titulo">Cursos Integrados ao Ensino Médio<br>Vespertinos</h1>
+    <div class="desc" id="descarea" style="display:none">
+        <h3 id="desctitulo"></h3>
+        <p id="desctexto"></p>
+    </div>
+    <div class="grid">
+        <div class="card"
+            onclick="mostrar('Administração', 'Alia a formação geral do Ensino Médio com competências em gestão de empresas, finanças corporativas e planejamento estratégico.')">
+            <img src="imagens/adm.png" alt="administracao">
+            <h3>Administração</h3>
+        </div>
+        <div class="card"
+            onclick="mostrar('Desenvolvimento de Sistemas', 'Forma desenvolvedores desde o Ensino Médio, com foco em programação de softwares, criação de aplicações web e manipulação de bancos de dados.')">
+            <img src="imagens/ds.png" alt="dc">
+            <h3>Desenvolvimento de Sistemas</h3>
+        </div>
+        <div class="card"
+            onclick="mostrar('Informática para Internet', 'Habilita o estudante a criar sites, sistemas web e aplicações online usando linguagens de programação atuais e ferramentas de design digital.')">
+            <img src="imagens/infonet.png" alt="infonet">
+            <h3>Informática para Internet</h3>
+        </div>
+        <div class="card"
+            onclick="mostrar('Logística', 'Integra o Ensino Médio com a gestão logística, abordando transporte, armazenamento e distribuição de mercadorias.')">
+            <img src="imagens/log.png" alt="logistica">
+            <h3>Logística</h3>
+        </div>
+        <div class="card"
+            onclick="mostrar('Meio Ambiente', 'Forma jovens comprometidos com a preservação ambiental e sustentabilidade, aliando o currículo do Ensino Médio a conhecimentos técnicos.')">
+            <img src="imagens/meioamb.png" alt="meioamb">
+            <h3>Meio Ambiente</h3>
+        </div>
+        <div class="card"
+            onclick="mostrar('Recursos Humanos', 'Prepara o estudante para gerir pessoas em organizações, com aprendizado em recrutamento, seleção, treinamento e desenvolvimento de equipes.')">
+            <img src="imagens/rh.png" alt="recursohumano">
+            <h3>Recursos Humanos</h3>
+        </div>
+        <div class="card"
+            onclick="mostrar('Segurança do Trabalho', 'Combina o Ensino Médio com formação em prevenção de acidentes, normas de segurança e proteção dos trabalhadores.')">
+            <img src="imagens/segtrab.png" alt="seguranca">
+            <h3>Segurança do Trabalho</h3>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Centro Paula Souza — Governo do Estado de São Paulo</p>
+        <p>© 2026 ETEC Vasco Antônio Venchiarutti</p>
+        <div class="govlogo">
+            <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                <img src="https://www.saopaulo.sp.gov.br/barra-govsp/img/logo-rodape-governo-do-estado-sp.png"
+                    alt="governo">
+            </a>
+        </div>
+    </footer>
+    <script>
+        function mostrar(nome, desc) {
+            document.getElementById('desctitulo').textContent = nome;
+            document.getElementById('desctexto').textContent = desc;
+            document.getElementById('descarea').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETEC VAV — Cursos Integrais</title>
+    <link rel="icon" href="imagens/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <img src="imagens/icon.png" alt="etecvav">
+            <span>ETEC VAV</span>
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="modulares.html">Modulares</a>
+            <a href="integrados.html" class="ativo">Integrados</a>
+        </nav>
+    </div>
+    <h1 class="titulo">Cursos Integrados ao Ensino Médio<br>Integrais</h1>
+    <div class="desc" id="descarea" style="display:none">
+        <h3 id="desctitulo"></h3>
+        <p id="desctexto"></p>
+    </div>
+    <div class="grid">
+        <div class="card" onclick="mostrar('Design de Interiores', 'Integra o Ensino Médio com a prática de projetar ambientes, trabalhando com estética, conforto, cores, iluminação e mobiliário para diferentes espaços.')">
+            <img src="imagens/design.png" alt="design">
+            <h3>Design de Interiores</h3>
+        </div>
+        <div class="card" onclick="mostrar('Edificações', 'Combina o Ensino Médio com formação em construção civil, incluindo projetos, materiais construtivos e supervisão de obras.')">
+            <img src="imagens/edi.png" alt="edificacao">
+            <h3>Edificações</h3>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Centro Paula Souza — Governo do Estado de São Paulo</p>
+        <p>© 2026 ETEC Vasco Antônio Venchiarutti</p>
+        <div class="govlogo">
+            <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                <img src="https://www.saopaulo.sp.gov.br/barra-govsp/img/logo-rodape-governo-do-estado-sp.png" alt="governo">
+            </a>
+        </div>
+    </footer>
+    <script>
+        function mostrar(nome, desc) {
+            document.getElementById('desctitulo').textContent = nome;
+            document.getElementById('desctexto').textContent = desc;
+            document.getElementById('descarea').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

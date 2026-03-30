@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETEC VAV — Cursos Modulares</title>
+    <link rel="icon" href="imagens/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <img src="imagens/icon.png" alt="etecvav">
+            <span>ETEC VAV</span>
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="modulares.html" class="ativo">Modulares</a>
+            <a href="integrados.html">Integrados</a>
+        </nav>
+    </div>
+    <h1 class="titulo">Cursos Modulares</h1>
+    <div class="desc" id="descarea" style="display:none">
+        <h3 id="desctitulo"></h3>
+        <p id="desctexto"></p>
+    </div>
+    <div class="grid">
+        <div class="card" onclick="mostrar('Administração', 'Prepara profissionais para atuarem na gestão de empresas, abrangendo áreas como finanças, organização corporativa e elaboração de estratégias de negócios.')">
+            <img src="imagens/adm.png" alt="admin">
+            <h3>Administração</h3>
+        </div>
+        <div class="card" onclick="mostrar('Agrimensura', 'Ensina técnicas de medição, mapeamento e demarcação de terrenos, preparando o aluno para auxiliar em projetos de engenharia e no planejamento territorial.')">
+            <img src="imagens/modulares.png" alt="agri">
+            <h3>Agrimensura</h3>
+        </div>
+        <div class="card" onclick="mostrar('Desenvolvimento de Sistemas', 'Capacita o aluno para a criação de softwares, aplicações web e manipulação de bancos de dados, com foco em lógica de programação e tecnologias de back-end.')">
+            <img src="imagens/ds.png" alt="dc">
+            <h3>Desenvolvimento de Sistemas</h3>
+        </div>
+        <div class="card" onclick="mostrar('Edificações', 'Forma técnicos para atuar na construção civil, com aprendizado em projetos arquitetônicos, materiais de construção e acompanhamento de obras.')">
+            <img src="imagens/edi.png" alt="edifi">
+            <h3>Edificações</h3>
+        </div>
+        <div class="card" onclick="mostrar('Logística', 'Prepara o aluno para atuar no planejamento e controle de processos de transporte, armazenamento e distribuição de mercadorias.')">
+            <img src="imagens/log.png" alt="logist">
+            <h3>Logística</h3>
+        </div>
+        <div class="card" onclick="mostrar('Meio Ambiente', 'Desenvolve profissionais conscientes sobre preservação ambiental, uso sustentável dos recursos naturais e implementação de políticas de sustentabilidade.')">
+            <img src="imagens/meioamb.png" alt="meioamb">
+            <h3>Meio Ambiente</h3>
+        </div>
+        <div class="card" onclick="mostrar('Saneamento', 'Forma profissionais para atuarem em sistemas de abastecimento de água, tratamento de esgoto e gestão de resíduos, promovendo a saúde pública.')">
+            <img src="imagens/saneamento.png" alt="saneamento">
+            <h3>Saneamento</h3>
+        </div>
+        <div class="card" onclick="mostrar('Segurança do Trabalho', 'Ensina a prevenir acidentes ocupacionais e garantir ambientes de trabalho seguros, com estudo de normas regulamentadoras e análise de riscos.')">
+            <img src="imagens/segtrab.png" alt="seguranca">
+            <h3>Segurança do Trabalho</h3>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Centro Paula Souza — Governo do Estado de São Paulo</p>
+        <p>© 2026 ETEC Vasco Antônio Venchiarutti</p>
+        <div class="govlogo">
+            <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                <img src="https://www.saopaulo.sp.gov.br/barra-govsp/img/logo-rodape-governo-do-estado-sp.png" alt="Governo SP">
+            </a>
+        </div>
+    </footer>
+    <script>
+        function mostrar(nome, desc) {
+            document.getElementById('desctitulo').textContent = nome;
+            document.getElementById('desctexto').textContent = desc;
+            document.getElementById('descarea').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: auto;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #eee;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 0 30px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #b91c1c;
+    float: left;
+}
+
+.navbar .logo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+    float: right;
+}
+
+.navbar nav a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+}
+
+.navbar nav a:hover {
+    color: #b91c1c;
+}
+
+.navbar nav a.ativo {
+    color: #b91c1c;
+    border-bottom-color: #b91c1c;
+}
+
+.titulo {
+    text-align: center;
+    padding: 36px 20px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    display: block;
+    clear: both;
+}
+
+.categorias {
+    max-width: 1000px;
+    margin: 10px auto 50px;
+    padding: 0 20px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    clear: both;
+}
+
+.categorias.tres {
+    max-width: 1100px;
+}
+.categorias p{
+    padding-bottom: 15px;
+}
+
+.catcard {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.catcard:hover {
+    border-color: #b91c1c;
+}
+
+.catcard img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    background: #ddd;
+    display: block;
+}
+
+.catcard h2 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 13px;
+    color: #333;
+    margin: 0;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 10px auto 40px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    clear: both;
+}
+
+.card {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    float: none;
+}
+
+.card:hover {
+    border-color: #b91c1c;
+}
+
+.card.ativo {
+    border-color: #b91c1c;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: #ddd;
+    display: block;
+    border: none;
+}
+
+.card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 8px;
+    color: #333;
+    margin: 0;
+    display: block;
+}
+
+.desc {
+    display: none;
+    max-width: 1200px;
+    margin: 0 auto 16px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    clear: both;
+    position: relative;
+}
+
+.desc h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.desc p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer {
+    background: #333;
+    color: #999;
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 12px;
+    margin-top: auto;
+    clear: both;
+    position: relative;
+}
+
+.footer p {
+    margin: 0;
+    display: block;
+}
+
+.footer .govlogo {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer .govlogo a {
+    display: inline-block;
+    line-height: 0;
+}
+
+.footer .govlogo img {
+    height: 24px;
+    opacity: 0.8;
+    vertical-align: middle;
+    border: none;
+}
